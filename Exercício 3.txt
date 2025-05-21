@@ -1,0 +1,47 @@
+/*Desenvolvi um algoritmo para verificação de número primo
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.exercicio_numeroprimo;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Heloisa Silva 1 DS/AMS
+ */
+public class Exercicio_NumeroPrimo {
+
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+
+        // Solicita ao usuário o número a ser verificado
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        boolean ehPrimo = true;
+
+        // Números menores que 2 não são primos
+        if (numero < 2) {
+            ehPrimo = false;
+        } else {
+            // Verifica divisores de 2 até a raiz quadrada de 'numero'
+            for (int i = 2; i <= Math.sqrt(numero); i++) {
+                if (numero % i == 0) {
+                    ehPrimo = false;
+                    break;
+                }
+            }
+        }
+
+        // Exibe o resultado
+        if (ehPrimo) {
+            System.out.println(numero + " é um número primo.");
+        } else {
+            System.out.println(numero + " não é um número primo.");
+        }
+
+        scanner.close();
+    
+    }
+}

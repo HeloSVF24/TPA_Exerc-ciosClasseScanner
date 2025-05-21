@@ -1,0 +1,40 @@
+/*Desenvolvi uma calculadora para calcular a média das notas
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.exercicio_calculadoramediadenotas;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Heloisa Silva 1 DS/AMS
+ */
+public class Exercicio_CalculadoraMediaDeNotas {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita as 4 notas ao usuário
+        System.out.print("Digite a primeira nota: ");
+        double nota1 = scanner.nextDouble();
+
+        System.out.print("Digite a segunda nota: ");
+        double nota2 = scanner.nextDouble();
+
+        System.out.print("Digite a terceira nota: ");
+        double nota3 = scanner.nextDouble();
+
+        System.out.print("Digite a quarta nota: ");
+        double nota4 = scanner.nextDouble();
+
+        // Calcula a média das 4 notas
+        double media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+        // Exibe o resultado da média
+        System.out.println("A média das notas é: " + media);
+
+        scanner.close();
+    
+    }
+}

@@ -1,0 +1,32 @@
+/*Desenvolvendo um algoritmo de conversão de graus celsius em fahrenheit e kelvin
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.exercicio_grauscelsius;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Heloisa Silva 1DS/AMS
+ */
+public class Exercicio_GrausCelsius {
+
+    public static void main(String[] args) {
+        // Solicita ao usuário a temperatura em Celsius
+        try (Scanner scanner = new Scanner(System.in)) {
+            // Solicita ao usuário a temperatura em Celsius
+            System.out.print("Digite a temperatura em graus Celsius: ");
+            double celsius = scanner.nextDouble();
+            
+            // Conversão para Fahrenheit e Kelvin
+            double fahrenheit = (celsius * 9/5) + 32;
+            double kelvin = celsius + 273.15;
+            
+            // Exibe os resultados
+            System.out.println("Temperatura em Fahrenheit: " + fahrenheit + " °F");
+            System.out.println("Temperatura em Kelvin: " + kelvin + " K");
+        }
+    
+    }
+}

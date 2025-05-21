@@ -1,0 +1,40 @@
+/*Eu, aluna da fatec desenvolvir uma calculado com Clase Scanner
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.exercicios_somasubtracaomultiplicacaodivisao;
+
+import java.util.Scanner;
+
+/**Heloisa, desenvolvir uma calculadora
+ *
+ * @author Heloisa Silva 1 DS/AMS
+ */
+public class Exercicios_SomaSubtracaoMultiplicacaoDivisao {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita os dois números ao usuário
+        System.out.print("Digite o primeiro número: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Digite o segundo número: ");
+        double num2 = scanner.nextDouble();
+
+        // Realiza as operações e exibe os resultados
+        System.out.println("Soma: " + (num1 + num2));
+        System.out.println("Subtração: " + (num1 - num2));
+        System.out.println("Multiplicação: " + (num1 * num2));
+        if (num2 != 0) {
+            System.out.println("Divisão: " + (num1 / num2));
+        } else {
+            System.out.println("Divisão: Não é possível dividir por zero.");
+        }
+
+        scanner.close();
+
+
+
+    }
+}
